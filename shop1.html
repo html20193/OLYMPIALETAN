@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title> 메인페이지 </title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/fullpage.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <link rel="apple-touch-icon" href="assets/images/index/logo_1.png"><!-- 아이폰 전용 -->
+    <link rel="shortcut icon" href="assets/images/index/logo_1.png"><!-- 안드로이드폰 전용 -->
+    <script> // 인디케이터
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                //필요한 옵션으로 추가
+                // sectionsColor : ['red', 'green', 'blue', 'gray'], //각영역의 배경색
+                navigation: true,   //인디케이터를 보여지게 
+                navigationPosition: 'right',    //인디케이터의 위치
+                navigationTooltips: ['본문1', '본문2', '본문3', '푸터'], //인디케이터에 오버한 경우 보여질 텍스트, 접근성 향상
+                scrollBar: true, //스크롤바 생성하기(top 버튼이 필요하면 추가)
+                scrollOverflow: true,
+            });
+        })
+    </script>
+
+
+</head>
+<body>
+    <!-- <div id="skip">
+        <a href="#fullpage">본문 바로가기</a>
+    </div> -->
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                <a href="">
+                    <img src="assets/images/index/logo_1.png" alt="올림피아르탱로고" class="logo_white">
+                </a>
+                <p>OLYMPIA LE TAN</p>
+            </h1>
+            <!-- 네비게이션 만들기 -->
+            <button class="btn_menu">
+                <span class="sr-only">메뉴 열기</span>
+                <span class="line top"></span>
+                <span class="line mid"></span>
+                <span class="line btm"></span>
+            </button>
+            <nav id="gnb">
+                <h2 class="sr-only">주메뉴</h2>
+                <ul>
+                    <li class="on">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Company</a>
+                    </li>
+                    <li>
+                        <a href="">Shop</a>
+                        <ul>
+                            <li><a href="shop2.html">Pre-Order</a></li>
+                            <li><a href="">Etc.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section class ="shop_info">
+            <figure>
+                <a href="shop2.html"><figcaption class="fadeIn figcaption1">PRE-ORDER</figcaption></a>
+                <a href="shop2.html"><img src="assets/images/shop/shop.png" srcset="assets/images/shop/shop2.png 2x, assets/images/shop/shop3.png 3x" alt="백조가방" class="shop_info_image1"></a>
+            </figure>
+            <figure>
+                <a href=""><figcaption class="fadeIn figcaption2">E. T. C.</figcaption></a>
+                <a href=""><img src="assets/images/shop/shop1_1.png" srcset="assets/images/shop/shop1_2.png 2x, assets/images/shop/shop1_3.png 3x" alt="핑크가방" class="shop_info_image2"></a>
+            </figure>
+        </section>
+
+        <!-- <div class ="section">
+            <div class ="section fp-auto-height" id="cnt4">
+                <footer id="footer">
+                    <p>&copy; 2019 OLT | Legal notice Any question ? <br>
+                        Contact us contact@olympialetan.com | Subscribe to our Newsletter</p>
+                    
+                </footer>
+         </div> -->
+    </div>
+</body>
+</html>

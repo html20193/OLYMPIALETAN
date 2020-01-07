@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title> 메인페이지 </title>
+    <link rel="stylesheet" href="assets/css/fullpage.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/fullpage.min.js"></script>
+    <script src="assets/js/scrolloverflow.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <link rel="apple-touch-icon" href="assets/images/index/logo_1.png"><!-- 아이폰 전용 -->
+    <link rel="shortcut icon" href="assets/images/index/logo_1.png"><!-- 안드로이드폰 전용 -->
+    <script> // 인디케이터
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                //필요한 옵션으로 추가
+                // sectionsColor : ['red', 'green', 'blue', 'gray'], //각영역의 배경색
+                navigation: true,   //인디케이터를 보여지게 
+                navigationPosition: 'right',    //인디케이터의 위치
+                navigationTooltips: ['MAIN', 'MENU', 'COMPANY', 'footer'], //인디케이터에 오버한 경우 보여질 텍스트, 접근성 향상
+                scrollBar: true, //스크롤바 생성하기(top 버튼이 필요하면 추가)
+                scrollOverflow: true             
+            });
+
+            //common.css 128, 143 edit
+            //common.js 30, 42
+        });
+    </script>
+
+</head>
+<body>
+    <!-- <div id="skip">
+        <a href="#fullpage">본문 바로가기</a>
+    </div> -->
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                <a href="">
+                    <img src="assets/images/index/logo_1.png" alt="올림피아르탱로고" class="logo_white">
+                </a>
+                <p>OLYMPIA LE TAN</p>
+            </h1>
+            <!-- 네비게이션 만들기 -->
+            <button class="btn_menu">
+                <span class="sr-only">메뉴 열기</span>
+                <span class="line top"></span>
+                <span class="line mid"></span>
+                <span class="line btm"></span>
+            </button>
+            <nav id="gnb">
+                <h2 class="sr-only">주메뉴</h2>
+                <ul>
+                    <li class="on">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Company</a>
+                    </li>
+                    <li>
+                        <a href="">Shop</a>
+                        <ul>
+                            <li><a href="shop2.html">Pre-Order</a></li>
+                            <li><a href="">Etc.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div id="fullpage">
+        </section> -->
+        <section class="section" id="cnt1">
+            <div class="video">
+                <img src="assets/images/index/mainx.png" alt="상단메인사진" srcset="assets/images/index/mainx2.png, assets/images/index/mainx3.png">
+                <iframe class="youtube" width="320" height="180" src="https://www.youtube.com/embed/Rm2QQuhWpJM" frameborder="0" allowfullscreen=""></iframe>
+                <p>ALL I WANT IS OLYMPIA LE TAN</p>
+            </div>
+        </section>
+        <section class="section" id="cnt2">
+            <figure>
+                <figcaption class="fadeIn fade"> <a href="shop1.html">SHOP</a> </figcaption>
+                <img class="fadeInRight fade" src="assets/images/index/shop.png" alt="shop사진" srcset="assets/images/index/shop2.png, assets/images/index/shop3.png">
+            </figure>
+            <figure>
+                <figcaption class="fadeIn fade"> <a href="">COMPANY</a> </figcaption>
+                <img class="fadeInLeft fade" src="assets/images/index/company.png" alt="company 사진" srcset="assets/images/index/company2.png, assets/images/index/company3.png">
+            </figure>
+            <figure>
+                <figcaption class="fadeIn fade"> <a href="">COLECTION</a> </figcaption>
+                <img class="fadeInRight fade" src="assets/images/index/collection.png" alt="collection사진" srcset="assets/images/index/collection2.png, assets/images/index/collection3.png">
+            </figure>
+        </section>
+        <section class="section" id="cnt3">
+            <img class="fadeIn fade" src="assets/images/index/books.png" alt="상단메인사진" srcset="assets/images/index/books2.png, assets/images/index/books3.png">
+            <p class="sub_tit fadeInUp fade">THE CUSTOM MADE BOOK-CLUTCH !</p>
+            <p class="fadeIn fade">You can now have your personalised book clutch!<br>
+                A childhood book, <br>
+                your favourite novel, the play you know by heart… <br>
+                will be reinterpreted by the Olympia Le-Tan team.<br>
+                The cover should be from a vintage book<br> 
+                and it is recommended <br>
+                that you choose an illustration <br> 
+                rather than a photograph.<br>
+                Olympia will approve the artwork, <br>
+                making sure it respects the brand’s identity*.<br>
+                
+                You can select the base colour <br>
+                of the bag from a vast range <br>
+                we have available.<br>
+                Additionally, the back of the bag can be embroidered <br>
+                with your initials, a name, a date or a short sentence.<br>
+                You can also choose to have a removable <br>
+                cross-body strap on your bag.<br>
+                
+                The book-clutch will be numbered 01/01.<br>
+                
+                You will receive your order within the 3 months following <br>
+                the confirmation of your purchase.</p>
+        </section>
+
+        <div class ="section fp-auto-height" id="cnt4">
+            <footer id="footer">
+                <p>&copy; 2019 OLT | Legal notice Any question ? <br>
+                    Contact us contact@olympialetan.com | Subscribe to our Newsletter</p>
+                
+            </footer>
+         </div>
+
+        </div>
+    </div>
+</body>
+</html>
